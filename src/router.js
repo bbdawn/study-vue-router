@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import List from './components/List.vue';
+import Home from './components/Home.vue';
 
 const routes = [
   {
@@ -7,6 +8,10 @@ const routes = [
     // component: import해온 컴포넌트,
     path: "/list",
     component: List,
+  },
+  {
+    path: "/",
+    component: Home,
   }
 ];
 
