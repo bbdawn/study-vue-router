@@ -16,11 +16,9 @@
   </div>
 </nav>
 
-<!-- <div>
-  <br><br>
-  <h5>이주현의 블로그입니다!</h5>
-  <p> Vue로 만들었음 </p>
-</div> -->
+<router-link to="/">홈페이지 </router-link>
+<router-link to="/link">리스트페이지</router-link>
+
 
 <router-view :blog="blog"></router-view>
 
