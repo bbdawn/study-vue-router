@@ -22,13 +22,15 @@
   <p> Vue로 만들었음 </p>
 </div>
 
-<List :blog="blog"/>
+<router-view :blog="blog"></router-view>
+
+<!-- <List :blog="blog"/> -->
 
 
 </template>
 
 <script>
-import List from './components/List.vue';
+// import List from './components/List.vue';
 import blog from './assets/blog.js';
 
 export default {
@@ -39,7 +41,7 @@ export default {
     }
   },
   components: {
-    List,
+    // List,
   }
 }
 </script>
