@@ -18,7 +18,7 @@
 
 <router-link to="/">홈페이지 </router-link>
 <router-link to="/link">리스트페이지</router-link>
-
+<router-link to="/detail">상세보기</router-link>
 
 <router-view :blog="blog"></router-view>
 
