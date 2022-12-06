@@ -22,23 +22,29 @@
   <p> Vue로 만들었음 </p>
 </div>
 
-<List/>
+<List :blog="blog"/>
 
 
 </template>
 
 <script>
-
+import List from './components/List.vue';
+import blog from './assets/blog.js';
 
 export default {
   name: 'App',
+  data(){
+    return {
+       blog : blog
+    }
+  },
   components: {
-  
+    List,
   }
 }
 </script>
 
-<style>
+<style>  
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
