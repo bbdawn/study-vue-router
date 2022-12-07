@@ -11,6 +11,13 @@ const routes = [
     // component: import해온 컴포넌트,
     path: "/list",
     component: List,
+
+    // /list 라는 경로로 들어가기 전에 검사를 하고 싶으면 beforeEnter라는 항목 사용 
+    beforeEnter: ()=> {
+        if(로그인했냐 == false) {
+            return '/login'
+        }
+    }
   },
   {
     path: "/",
