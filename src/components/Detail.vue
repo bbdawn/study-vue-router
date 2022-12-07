@@ -7,6 +7,7 @@
     <h6>{{blog[$route.params.id].title}}</h6>
     <h6>{{blog[$route.params.id].content}}</h6>
     <p>{{blog[$route.params.id].date}}</p>
+    <router-view></router-view> 
   </div>
 </template>
 
