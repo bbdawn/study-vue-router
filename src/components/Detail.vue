@@ -1,16 +1,21 @@
+// $route.params.id
 <template>
+
   <div>
     <br><br>
     <h5>상세페이지</h5>
-    <h6>글제목</h6>
-    <p>글설명</p>
+    <h6>{{blog[$route.params.id].title}}</h6>
+    <h6>{{blog[$route.params.id].content}}</h6>
+    <p>{{blog[$route.params.id].date}}</p>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'TheDetail'
-
+    name: 'TheDetail',
+    props : {
+        blog : Array,
+    }
 }
 </script>
 
