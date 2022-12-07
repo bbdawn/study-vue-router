@@ -7,28 +7,37 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+
+        <router-link to="/">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled">Disabled</a>
+        </router-link>
+
+        <router-link to="/list">
+        <a class="nav-link" href="#">List</a>
+        </router-link>
+
+        <router-link to="/detail">
+        <a class="nav-link" href="#">Detail</a>
+        </router-link>
+
       </div>
     </div>
   </div>
 </nav>
 
-<div>
-  <br><br>
-  <h5>이주현의 블로그입니다!</h5>
-  <p> Vue로 만들었음 </p>
-</div>
+<router-link to="/">홈페이지 </router-link>
+<router-link to="/list">리스트페이지</router-link>
+<router-link to="/detail">상세보기</router-link>
 
-<List :blog="blog"/>
+<router-view :blog="blog"></router-view>
+
+<!-- <List :blog="blog"/> -->
 
 
 </template>
 
 <script>
-import List from './components/List.vue';
+// import List from './components/List.vue';
 import blog from './assets/blog.js';
 
 export default {
@@ -39,7 +48,7 @@ export default {
     }
   },
   components: {
-    List,
+    // List,
   }
 }
 </script>
