@@ -17,7 +17,7 @@
         </router-link>
 
         <router-link to="/detail">
-        <a class="nav-link" href="#">Detail</a>
+        <a class="nav-link" href="#" :blog="blog">Detail</a>
         </router-link>
 
       </div>
@@ -29,7 +29,9 @@
 <router-link to="/list">리스트페이지</router-link>
 <router-link to="/detail">상세보기</router-link>
 
+<div class="mt-4">
 <router-view :blog="blog"></router-view>
+</div>
 
 <!-- <List :blog="blog"/> -->
 

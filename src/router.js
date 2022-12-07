@@ -15,7 +15,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/detail",
+    // path: "/detail/:id",
+    //숫자만 찾아주는 정규식 문법 (\\d+)
+    path: "/detail/:id(\\d+)",
     component: Detail,
   }
 ];
